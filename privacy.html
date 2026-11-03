@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chainbreaker · Privacy policy</title>
+<meta name="description" content="Chainbreaker keeps everything on your phone. It has no internet access, collects no data and shares nothing.">
+<!-- GROW-004. Public privacy policy for the Play listing, served by GitHub Pages from /docs.
+     Every statement must match README.md, AndroidManifest.xml and the in-app disclosures (usage_access_*, lock_access_*).
+     Before publishing: replace CONTACT_EMAIL below with the developer contact email shown on the Play listing. -->
+<style>
+:root{color-scheme:light dark;--bg:#FBF9F1;--ink:#1B1C17;--muted:#45483E;--rule:#C6C8BA;--accent:#326667;--card:#F0EEE6}
+@media (prefers-color-scheme:dark){:root{--bg:#13140F;--ink:#E4E3DB;--muted:#C6C8BA;--rule:#45483E;--accent:#9BD0D1;--card:#1F201B}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Roboto,"Google Sans Text",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:680px;margin:0 auto;padding:56px 24px 80px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--accent);font-weight:500;letter-spacing:.2px}
+.brand svg{width:28px;height:28px}
+h1,h2{font-family:"Noto Serif","Iowan Old Style",Georgia,serif;font-weight:400;letter-spacing:-.2px}
+h1{font-size:40px;line-height:1.2;margin:24px 0 8px}
+h2{font-size:24px;line-height:1.3;margin:44px 0 8px}
+p,li{color:var(--ink)}
+.meta{color:var(--muted);font-size:15px}
+.promise{background:var(--card);border-radius:16px;padding:20px 24px;margin:32px 0 0;font-size:18px}
+ul{padding-left:22px}
+li{margin:6px 0}
+code{font:14px/1.4 ui-monospace,Menlo,monospace;color:var(--muted)}
+a{color:var(--accent);text-underline-offset:3px}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);color:var(--muted);font-size:15px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg viewBox="26 26 56 56" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" d="M68,60.5L68,63A14,14 0 0 1 40,63L40,45A14,14 0 0 1 68,45L68,47.5"/></svg>
+    Chainbreaker
+  </div>
+  <h1>Privacy policy</h1>
+  <p class="meta">Effective 3 November 2026 · applies to the Chainbreaker Android app (<code>com.prodlocker.app</code>)</p>
+
+  <p class="promise">Everything stays on your phone. Chainbreaker has no internet access, no accounts, no ads and no analytics. We don't collect, receive or share any of your data.</p>
+
+  <h2>What the app can see, and why</h2>
+  <p>Chainbreaker lets you earn time on distracting apps by first spending time on apps you choose as productive. To do that it uses two Android permissions, and only after you turn them on yourself in Settings.</p>
+  <ul>
+    <li><strong>Usage Access</strong> (<code>PACKAGE_USAGE_STATS</code>). Chainbreaker reads which apps were open and for how long, so it can count your productive time and your distracting time. Before you're sent to Settings, the app explains this on its own screen.</li>
+    <li><strong>Accessibility service</strong>. Chainbreaker uses it only to notice which app has just come to the foreground (its package name). When a distracting app opens and your free time is used up, Chainbreaker shows its own lock screen. It doesn't read what's on screen, what you type or your notifications, and it doesn't act inside other apps. Before you're sent to Settings, the app shows a full-screen disclosure that you have to agree to. It is not an accessibility tool for people with disabilities.</li>
+  </ul>
+  <p>Chainbreaker also lists the apps installed on your phone that have a launcher icon, so you can pick productive and distracting ones. On Android 16 and newer it checks whether Advanced Protection is on, only to explain when locking isn't available.</p>
+
+  <h2>What is stored, and where</h2>
+  <p>Everything below is kept in the app's private storage on your phone. No other app can read it, and it is never uploaded.</p>
+  <ul>
+    <li>Your app usage sessions (which app, when, for how long), one file per day, kept for 90 days.</li>
+    <li>Your daily chain of "links": one value per finished day, kept for 90 days, plus the current chain length.</li>
+    <li>Your rules, your choice of productive and distracting apps, and app settings.</li>
+    <li>For each time you borrow a few minutes: only its start and end time, kept for 30 days. The reason you pick is never saved.</li>
+    <li>The time you agreed to the Accessibility disclosure, your setup progress, and simple on-device setup counters.</li>
+    <li>For the weekly review: the newest week you've seen and, if you set one, the app you chose to focus on.</li>
+    <li>Your "usual": your average daily time per app, taken from your first week or from Android's own usage history, so Progress can show the time you took back.</li>
+    <li>For the home screen widget: only what it shows (minutes left, the reward line and a suggested productive app).</li>
+  </ul>
+  <p>Your rules and app choices, the consent time, setup progress and counters, your weekly review choice, your "usual" and the widget's record are kept until you change them, clear the app's storage or uninstall the app.</p>
+  <p>The Accessibility service keeps the last few foreground changes (app package name and time, 64 at most) in memory only. They are not written to storage or logged.</p>
+
+  <h2>What leaves your phone</h2>
+  <p>Nothing. The app doesn't have the Android internet permission, so it cannot send data anywhere. There are no third-party SDKs for analytics, advertising or crash reporting. Chainbreaker also opts out of Android cloud backup and device-to-device transfer, so its data isn't copied to Google Drive or to a new phone.</p>
+
+  <h2>Keeping and deleting your data</h2>
+  <ul>
+    <li>Usage history and the chain record are deleted automatically after 90 days, and borrow times after 30 days.</li>
+    <li>You can turn off Usage Access or the Accessibility service at any time in your phone's Settings. Chainbreaker then stops seeing usage or locking apps.</li>
+    <li>To delete everything at once, go to Settings → Apps → Chainbreaker → Storage → Clear storage, or uninstall the app.</li>
+  </ul>
+  <p>Because we never receive your data, we have nothing to hand over, sell or delete on a server.</p>
+
+  <h2>Children</h2>
+  <p>Chainbreaker is not directed at children under 13. It collects no personal information from anyone, of any age.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we'll update this page and the effective date above. If the app ever starts handling data differently, the policy will say so before that version is released.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
+
+  <footer>Chainbreaker · One link at a time.</footer>
+</main>
+</body>
+</html>
